@@ -1,0 +1,366 @@
+/* CSS Document */
+
+
+
+body
+{
+	background: url(../images/debut_light.png);
+	height: 100%;
+	width: 100%;
+}
+
+body#contact { height: 500px; }
+
+/* The page style */
+#page
+{
+	/*border: solid #000;*/
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:0;
+	padding:5px;
+	margin-bottom: 5%;
+	/*min-width: 600px;*/
+   	 width: 768px;
+	/*max-width: 768px;*/
+	/*min-height:1024px;*/
+	height:1024px;
+	/*max-height:1366px;*/
+	position:relative;
+	/*background: #D9CEAD;*/
+	/*border-left: 11px solid #C0B18F;*/
+	/*border-top: 5px solid #C0B18F;*/
+	/*border-right: 2px solid #C0B18F;*/
+	
+}
+
+
+/* Contains the logo and the navigation */
+#header
+{
+   // border: solid #000;
+    margin: 0 0 -7px;
+    padding:0;
+    width:100%;
+    min-height:100px;
+    max-height:130px;
+    position:relative;
+    overflow:hidden;
+    z-index:5;
+}
+
+
+/* Logo, within the header div */
+#logo
+{
+   // border: solid #000;
+    float:left;
+    margin-top:1%;
+    margin-left:3;
+	min-width: 240px; 
+	max-width: 300px;
+	position:relative;
+	height:auto;
+	position:relative;
+}
+
+
+/****************************************************/
+/**************** NAVIGATION ************************/
+/****************************************************/
+
+/* Navigation within the header div */
+#navigation
+{
+    //border: solid #000;
+    bottom:0;
+    right:0;
+    min-width:390px;
+    max-width:490px;
+    min-height: 34px;
+    max-height: 38px;
+    position:absolute;
+}
+
+/* Actual navigation bar css */
+#navUL
+{
+	width: 100%;
+	float: left;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+    bottom: 1px solid #ccc; 
+	text-decoration:none;
+	position:relative;
+	
+}
+
+/* List element within the navigation bar */
+#navUL li
+{
+    float: right;
+   
+}
+
+#navUL li a 
+{
+		display: block;
+		padding: 6px 10px;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 12pt;
+		color: #011C26;
+		margin-right: 5px;
+		margin-left: 5px;
+		
+}
+
+#navUL li a:hover 
+{
+    color: #BF2633;
+     border-bottom: 8px solid #BF2633;
+   
+
+}
+
+#navUL li #contact
+{
+		display: block;
+		padding: 6px 10px;
+		text-decoration: none;
+		font-weight: bold;
+		color: #011C26;
+		border-right:0; 
+}
+
+#navUL li #contact:hover 
+{
+    color: #BF2633; 
+    border-bottom: 8px solid #BF2633;
+}
+
+/* Color of the current page */
+body#home a#news,
+body#gallery a#gallery,
+body#cusec a#cusec,
+body#contact a#contact
+{
+	color: #BF2633;
+	border-bottom: 8px solid #BF2633;
+}
+
+
+
+
+/***************************************/
+
+
+/* Contains the page title : what page are you on (news, gallery, etc) */
+/* Also contains the facebook, twitter, and google plus icons/links */
+#page_title
+{
+	//border: solid #000;
+	min-width:600px;
+	max-width:768px;
+	min-height: 51px;
+	max-height: 68px;
+	margin:0;
+	padding:0;
+	position:relative;
+	z-index:0;
+	border-top: 8px solid #555;
+	border-bottom: 8px solid #555;
+}
+
+#news_text,
+#gallery_text,
+#cusec_text,
+#contact_text
+{
+    position: relative;
+    float: left;
+    padding:0;
+    margin:0;
+    top: 8px;
+    left: 10px;
+    font-weight: bold;
+    font-size: 20pt;
+    color: #BF2633;
+}
+
+/* Contains the posts, upcoming events, and banner */
+#content 
+{
+	 margin:0;
+	 padding:0;
+	// min-width:600px;
+	 width:768px;
+	 //min-height: 803px;
+	// max-height: 1108px;
+	height: 90%;
+	 position:relative;
+	 border-top: 8px solid #555;
+}
+
+/* The news posts div*/
+#post
+{
+    background: #F0F0F0;
+    float:left;
+    min-width:360px;
+	max-width:460px;
+	//min-height: 740px;
+	//max-height: 983px;
+	height: 100%;
+    margin-top: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	
+	border-top: 5px solid #DBDAD9;
+	padding: 10px;
+    
+}
+
+#titleOfUpcoming 
+{
+    color: #BF2633;
+    margin-left: 50px;
+	text-decoration:none;
+	
+}
+
+#singlePost
+{
+    border-bottom: 2px solid #BFBEBE;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+#newsTitle
+{
+    font-weight: bold;
+    color: #BF2633;
+}
+
+#author {font-size: 10pt; font-weight: bold;}
+#authorText
+{
+    font-size: 10pt;
+}
+#postText 
+{
+    padding-right: 20px;
+    font-size: 10pt;
+    margin: 10px;
+    word-wrap: normal;
+}
+
+/* Upcoming events div*/
+#upcoming 
+{
+   
+	float: right;
+	padding:0;
+	//min-width:240px;
+	//max-width: 316px;
+	width: 240px;
+	min-height: 333px;
+	max-height: 442px;
+	margin-top: 20px;
+	margin-right: 10px;
+	margin-left: 0px;
+	//background: #F7F7F7;
+	background: #F0F0F0;
+    border-top: 5px solid #DBDAD9;
+	//min-width: 600px;
+	//max-width: 768px;
+}
+
+#singleUpcoming
+{
+	padding-bottom: 2px;
+	border-bottom: 2px solid #BFBEBE;
+}
+
+/* The banner for the latest event that will happen */
+#eventBanner
+{
+   
+	float: right;
+	padding:0;
+	//min-width:240px;
+	//max-width: 316px;
+	width:240px;
+	min-height: 340px;
+	max-height: 449px;
+	margin-top: 5%;
+	margin-right: 10px;
+	margin-left: 0px;
+	//background: #F7F7F7;
+	border-top: 5px solid #DBDAD9;
+}
+
+#login
+{
+   // border: solid #000;
+    float: right;
+    margin-top: 1%;
+    margin-right: 2%;
+    padding:0;
+    min-width:200px;
+    max-width:250px;
+    min-height: 80px;
+    max-height: 100px;
+}
+
+/******* CUSEC ****/
+
+#qAItem
+{
+    padding:0;
+    padding-bottom:5px;
+    margin-top: 15px;
+    border-bottom: 2px solid #BFBEBE;
+}
+
+#question 
+{
+    font-weight: bold;
+    color: #BF2633;
+}
+
+/****** CONTACT PAGE ***/
+#contact_form
+{
+   border-top: 5px solid #BFBEBE;
+   width: 300px;
+   height: 400px;
+   margin-top: 70px;
+   margin-left: 40px;
+   padding 0;
+   float:left;
+}
+
+#contact_info
+{
+   float:right;
+   border-top: 5px solid #BFBEBE;
+   width: 370px;
+   height: 500px;
+   margin-top: 70px;
+   margin-right: 10px;
+   padding-top: 10px;
+   font-size:small;
+  
+    
+}
+
+#contact_info span
+{
+    color: #BF2633;
+    
+}
+
+
